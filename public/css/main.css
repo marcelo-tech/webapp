@@ -1,0 +1,170 @@
+ html {
+     font-family: monospace;
+ }
+
+ .warnings {
+     color: red;
+     font-weight: bold;
+     font-size: 1.3rem;
+     padding: 0.5rem 1rem;
+ }
+
+ body {
+     display: grid;
+     grid-template:
+         "header" 0.2fr "main" 1fr "footer" 0.05fr / 1fr;
+
+     min-height: 100vh;
+     font-size: 1.5rem;
+     margin: 0;
+ }
+
+ header {
+     display: flex;
+     justify-content: center;
+     background-color: darkorange;
+     padding: 1.5rem;
+ }
+
+ .main-header {
+     color: wheat;
+ }
+
+ main {
+     padding: 0.0rem 3.5rem;
+     grid-area: main;
+     height: 100%;
+ }
+
+
+ header {
+     grid-area: header;
+     font-size: 2.5rem;
+ }
+
+ .page-header {
+     color: gray;
+     /*border-bottom: 2px solid gray;*/
+ }
+
+ .form-control {
+     display: grid;
+     grid-template:
+         "fullname username" 1fr
+         "birthday password" 1fr "genre email" 1fr
+         "city country" 1fr "phone agreement" 1fr
+         "empty empty" 1fr
+         "empty empty" 1fr
+         "empty empty" 1fr
+         "submit submit" / 1fr 1fr;
+     align-items: center;
+ }
+
+ .form-control>div {
+     display: flex;
+     align-items: center;
+     justify-content: end;
+ }
+
+ .form-control>div>* {
+     padding: 0.5rem 1rem;
+     line-height: 1.8;
+     margin-bottom: 2rem;
+     font-size: inherit;
+ }
+
+ .form-control label {
+     color: darkgray;
+     font-weight: bold;
+ }
+
+ .form-control>div>input:not(input[type="checkbox"]):not(input[type="radio"]),
+ select {
+     width: 70%;
+ }
+
+ #fullnamebox {
+     grid-area: fullname;
+ }
+
+ #usernamebox {
+     grid-area: username;
+ }
+
+ #birthdaybox {
+     grid-area: birthday;
+ }
+
+ #passwordbox {
+     grid-area: password;
+ }
+
+ #genrebox {
+     grid-area: genre;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+
+ #emailbox {
+     grid-area: email;
+ }
+
+ #citybox {
+     grid-area: city;
+ }
+
+ #countrybox {
+     grid-area: country;
+ }
+
+ #phonebox {
+     grid-area: phone;
+ }
+
+ #agreementbox {
+     grid-area: agreement;
+ }
+
+ #submitbox {
+     display: flex;
+     grid-area: submit;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #submit {
+     width: 30%;
+     height: 4rem;
+     border-radius: 1rem;
+     border: #1987bf solid 0.2rem;
+     color: #1987bf;
+     background-color: white;
+     font-size: 1.8rem;
+     padding: 0.5rem 1rem;
+ }
+
+ #country {
+     height: 3rem;
+     font-size: 1.6rem;
+ }
+
+ .success-header {
+     padding: 2em 3em;
+     color: white;
+     background-color: #198754;
+     border-radius: 1.5rem;
+     margin: 3rem 5rem;
+ }
+
+ footer {
+     color: wheat;
+     grid-area: footer;
+     background-color: darkorange;
+     padding: 0.5rem 1rem;
+ }
+
+ .users-data {
+    display: grid;
+
+ }

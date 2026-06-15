@@ -1,0 +1,16 @@
+{
+    "name": "marcelo/webapp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcelo",
+            "email": "my-email@example.com"
+        }
+    ],
+    "require": {}
+}
